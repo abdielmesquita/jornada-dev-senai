@@ -1,5 +1,5 @@
 import Image from "next/image";
-import MobileMenuIcon from "./MobileMenuIcon";
+import IconMenuMobile from "./IconMenuMobile";
 
 export default function NavBar() {
   return (
@@ -14,7 +14,7 @@ export default function NavBar() {
           priority
           />
           
-        <MobileMenuIcon />
+        <IconMenuMobile />
       </div>
     </nav>
   )
