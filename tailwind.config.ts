@@ -9,7 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-linear": "linear-gradient(90deg, var(--gradient-step-04), var(--gradient-step-03), var(--gradient-step-02), var(--gradient-step-01))",
+        "gradient-pattern": "url('/line-1.svg')",
+        "gradient-pattern-invert": "url('/line-2.svg')",
       },
     },
   },
