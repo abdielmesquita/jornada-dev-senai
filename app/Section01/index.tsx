@@ -1,16 +1,21 @@
 import Image from "next/image";
+import { Montserrat } from "next/font/google";
+
+const montserrat = Montserrat({ subsets: ["latin"] });
 
 export default function Section01() {
   return(
     <div className="w-full">
       <div className="mt-6 mx-6">
         <div className="mx-auto">
-          <p className="text-3xl font-semibold">
-            <span className="font-extrabold text-transparent bg-gradient-pattern-invert bg-clip-text">
-              Construa seu futuro
-            </span>
-            <br/>na área de tecnologia
-          </p>
+          <div className={montserrat.className}>
+            <p className="text-3xl font-semibold">
+              <span className="font-extrabold text-transparent bg-gradient-pattern-invert bg-clip-text">
+                Construa seu futuro
+              </span>
+              <br/>na área de tecnologia
+            </p>
+          </div>
           <p className="text-sm my-6">
             O <span className="font-bold">Sistema Fiep</span>, por meio do <span className="font-bold">Senai</span>, oferece <span className="font-bold">uma jornada de estudos em programação front-end totalmente gratuita</span> com a <span className="font-bold">relevância do Senai</span> e certificado de qualidade profissional.
           </p>
@@ -22,7 +27,7 @@ export default function Section01() {
       <div className="h-[0.375rem] w-[11.25rem] flex flex-row bg-gradient-pattern bg-cover">
       </div>      
       <div className="mt-6 mx-8">
-        <ul className="text-xl tracking-tighter">
+        <ul className="text-xl">
           <li className="flex flex-row items-center mb-3">
             <div className="h-10 w-10 mr-2">
               <Image
@@ -76,7 +81,7 @@ export default function Section01() {
           </li>
         </ul>
         <button className="bg-[#5110B7] rounded-full flex flex-row items-center justify-center px-8 py-3 w-full mx-auto gap-2 mb-8">
-          <p className=" text-white text-lg font-semibold tracking-tighter">Quero participar</p>
+          <p className=" text-white text-lg font-semibold">Quero participar</p>
           <Image
             src="/ic-arrow-arrows-right.svg"
             alt="seta para direita"

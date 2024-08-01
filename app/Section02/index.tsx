@@ -1,16 +1,22 @@
 import Image from "next/image";
+import { Montserrat } from "next/font/google";
+
+const montserrat = Montserrat({ subsets: ["latin"] });
+
 
 export default function Section02() {
   return(
     <div className="w-full px-5 pt-7 pb-5">
       <div className="w-full bg-gradient-pattern bg-cover h-[0.188rem]"></div>
-      <p className="text-2xl font-semibold text-center leading-6 mt-5 mb-1">
-        <span className="font-extrabold text-transparent bg-gradient-pattern bg-clip-text">
-          Quem pode fazer
-        </span>
-        <br/>o curso?
-      </p>
-      <div className="flex flex-col lg:flex-row mt-5 gap-4 text-white text-lg px-2">
+      <div className={montserrat.className}>
+        <p className="text-2xl font-semibold text-center leading-6 mt-5 mb-1">
+          <span className="font-extrabold text-transparent bg-gradient-pattern bg-clip-text">
+            Quem pode fazer
+          </span>
+          <br/>o curso?
+        </p>
+      </div>
+      <div className="flex flex-col lg:flex-row mt-5 gap-4 text-white text-lg px-2 font-semibold">
         <div className="bg-[#DB3476] rounded-md flex flex-col items-center justify-center gap-2 text-center py-4">
           <Image
             src="/ic-generic-check-rounded.svg"
