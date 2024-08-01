@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        "gradient-linear": "linear-gradient(90deg, var(--gradient-step-04), var(--gradient-step-03), var(--gradient-step-02), var(--gradient-step-01))",
+      },
     },
   },
   plugins: [],

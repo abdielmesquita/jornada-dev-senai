@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root{
+  --gradient-step-01: 219, 52, 118;
+  --gradient-step-02: 237, 119, 49;
+  --gradient-step-03: 146, 18, 173;
+  --gradient-step-04: 22, 57, 168;
+}
