@@ -5,8 +5,8 @@ export default function Section01() {
     <div className="w-full">
       <div className="mt-6 mx-6">
         <p className="text-3xl font-semibold">
-          <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-orange-600">Cons</span>
-          <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-orange-600 via-purple-700 to-blue-900">trua seu futuro</span><br/>na área de tecnologia
+          <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-orange-500">Cons</span>
+          <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 via-violet-700 to-blue-900">trua seu futuro</span><br/>na área de tecnologia
         </p>
         <p className="text-sm my-6">
           O <span className="font-bold">Sistema Fiep</span>, por meio do <span className="font-bold">Senai</span>, oferece <span className="font-bold">uma jornada de estudos em programação front-end totalmente gratuita</span> com a <span className="font-bold">relevância do Senai</span> e certificado de qualidade profissional.
@@ -16,9 +16,9 @@ export default function Section01() {
         </p>
       </div>
       <div className="h-[0.375rem] w-[11.25rem] flex flex-row">
-        <div className="h-[0.375rem] w-full bg-gradient-to-r from-blue-900 to-purple-700"></div>
-        <div className="h-[0.375rem] w-full bg-gradient-to-r from-purple-700 to-orange-600"></div>
-        <div className="h-[0.375rem] w-full bg-gradient-to-r from-orange-600 to-pink-600"></div>
+        <div className="h-[0.375rem] w-full bg-gradient-to-r from-blue-900 to-violet-700"></div>
+        <div className="h-[0.375rem] w-full bg-gradient-to-r from-violet-700 to-orange-500"></div>
+        <div className="h-[0.375rem] w-full bg-gradient-to-r from-orange-500 to-pink-600"></div>
       </div>      
       <div className="mt-6 mx-8">
         <ul className="text-xl tracking-tighter">
@@ -74,7 +74,7 @@ export default function Section01() {
             </div>
           </li>
         </ul>
-        <button className="bg-purple-900 rounded-full flex flex-row items-center justify-center px-8 py-3 w-full mx-auto gap-2 mb-8">
+        <button className="bg-violet-900 rounded-full flex flex-row items-center justify-center px-8 py-3 w-full mx-auto gap-2 mb-8">
           <p className=" text-white text-lg font-semibold tracking-tighter">Quero participar</p>
           <Image
             src="/ic-arrow-arrows-right.svg"
