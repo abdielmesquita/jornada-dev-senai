@@ -27,7 +27,7 @@ export default function Section01() {
       <div className="h-[0.375rem] w-[11.25rem] flex flex-row bg-gradient-pattern bg-cover">
       </div>      
       <div className="mt-6 mx-8">
-        <ul className="text-xl">
+        <ul className="text-xl mb-8">
           <li className="flex flex-row items-center mb-3">
             <div className="h-10 w-10 mr-2">
               <Image
