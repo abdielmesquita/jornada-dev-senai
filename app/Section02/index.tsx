@@ -6,18 +6,19 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 
 export default function Section02() {
   return(
-    <div className="w-full px-5 pt-7 pb-5">
+    <div className="w-full px-5 pt-7 pb-5 lg:max-w-5xl lg:mx-auto">
       <div className="w-full bg-gradient-pattern bg-cover h-[0.188rem]"></div>
-      <div className={montserrat.className}>
-        <p className="text-2xl font-semibold text-center leading-6 mt-5 mb-1">
-          <span className="font-extrabold text-transparent bg-gradient-pattern bg-clip-text">
-            Quem pode fazer
-          </span>
-          <br/>o curso?
-        </p>
-      </div>
+      <p className={`text-2xl font-semibold text-center leading-6 mt-5 mb-1 ${montserrat.className} lg:hidden`}>
+        <span className="font-extrabold text-transparent bg-gradient-pattern bg-clip-text">
+          Quem pode fazer
+        </span>
+        <br/> o curso?
+      </p>
+      <p className={`hidden text-2xl font-semibold text-center leading-6 mt-5 mb-1 ${montserrat.className} lg:block`}>
+        <span className="font-extrabold text-transparent bg-gradient-pattern-invert bg-contain bg-clip-text">Quem pode</span> fazer o curso?
+      </p>
       <div className="flex flex-col lg:flex-row mt-5 gap-4 text-white text-lg px-2 font-semibold">
-        <div className="bg-[#DB3476] rounded-md flex flex-col items-center justify-center gap-2 text-center py-4">
+        <div className="bg-[#DB3476] rounded-md flex flex-col items-center justify-center gap-2 text-center py-4 lg:w-full">
           <Image
             src="/ic-generic-check-rounded.svg"
             alt="círculo checado"
@@ -28,7 +29,7 @@ export default function Section02() {
             />
           <p>Residentes do<br/> estado do Paraná</p>
         </div>
-        <div className="bg-[#ED7731] rounded-md flex flex-col items-center justify-center gap-2 text-center py-4">
+        <div className="bg-[#ED7731] rounded-md flex flex-col items-center justify-center gap-2 text-center py-4 lg:w-full">
           <Image
             src="/ic-generic-check-rounded.svg"
             alt="círculo checado"
@@ -39,7 +40,7 @@ export default function Section02() {
             />
           <p>Pessoas com idade<br/> mínima de 14 anos</p>
         </div>
-        <div className="bg-[#9212AD] rounded-md flex flex-col items-center justify-center gap-2 text-center py-4">
+        <div className="bg-[#9212AD] rounded-md flex flex-col items-center justify-center gap-2 text-center py-4 lg:w-full">
           <Image
             src="/ic-generic-check-rounded.svg"
             alt="círculo checado"
